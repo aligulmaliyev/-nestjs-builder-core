@@ -1,0 +1,57 @@
+{
+  "name": "nestjs-builder",
+  "version": "1.1.1",
+  "description": "Pro-level Builder pattern for NestJS with async support, validation, default values, and type-safe methods.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "nestjs",
+    "builder",
+    "typescript",
+    "pattern",
+    "validation",
+    "async",
+    "factory",
+    "decorator",
+    "module",
+    "dynamic"
+  ],
+  "author": "Ali Gulmaliyev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aligulmaliyev/nestjs-builder.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/aligulmaliyev/nestjs-builder/issues"
+  },
+  "homepage": "https://github.com/aligulmaliyev/nestjs-builder#readme",
+  "dependencies": {
+    "@nestjs/common": "^11.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "reflect-metadata": "^0.1.13"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^11.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.2",
+    "tslib": "^2.6.0",
+    "typescript": "^5.5.0"
+  }
+}
